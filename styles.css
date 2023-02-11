@@ -173,7 +173,7 @@ button {
     float: right;
     position: absolute;
     top:18%;
-    width:60%;
+    width:58%;
     right:0;
     -webkit-mask-image: -webkit-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 88%, rgba(255,255,255,0) 100%);
     mask-image: -webkit-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 88%, rgba(255,255,255,0) 100%);
