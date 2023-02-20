@@ -12,10 +12,25 @@ window.addEventListener('load', () => {
         }
     })
 
+    // Get the header
+    var header = document.getElementById("header");
+    var sticky = 50;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.scrollY > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+    window.addEventListener('scroll', () => { myFunction() });
+
 })
 
 function showQuemSouEu() {
-    document.getElementById("quem-sou-eu-more").style.display = "block";
+    document.getElementById("quem-sou-eu-more").style.display = "flow-root";
     document.getElementById("show-quem-sou-eu-more").style.display = "none";
 }
 

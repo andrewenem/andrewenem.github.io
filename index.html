@@ -47,7 +47,9 @@
 
     <div class="content">
         <div id="intro">
-            <h1>O <u>melhor método</u> de estudos do Brasil para<br><u>o Enem</u></h1>
+            <div class="blob blob-blue"></div>
+            <div class="blob blob-purple"></div>
+            <h1>O <u>melhor método</u> de estudos do Brasil para <br><u>o Enem</u></h1>
             <a href="#metodo"><button>Comece já <i class="fa fa-arrow-right"></i></button></a>
             
             <img src="FotoMain.png" width="70%" class="andre"/>
@@ -65,7 +67,7 @@
         <div id="quem-sou-eu">
             <h2><i class="fa fa-stethoscope"></i>Quem sou eu</h2>
             <img src="FotoPintado.png" alt="Foto minha sorrindo, com pinturas nos braços que dizem: 1º UFRJ, 1º ENEM. Na testa, está pintado MED.">
-            <p>Nasci em São Paulo, mas moro no Rio desde os meus 9 anos. Apesar de ser apaixonado pela Medicina desde a infância,
+            <p class="initial-quem-sou-eu">Nasci em São Paulo, mas moro no Rio desde os meus 9 anos. Apesar de ser apaixonado pela Medicina desde a infância,
             só comecei a acreditar em meu potencial no 2º ano do Ensino Médio, em 2018, quando prestei o Enem pela primeira vez.
             <br><br>
             À época, fiquei muito feliz com o resultado, porque ainda não tinha noção do desafio que é conquistar uma vaga na universidade.
@@ -162,38 +164,48 @@
             <h2><i class="fa fa-circle-check"></i>Quer ter meu Método?</h2>
             <p>A Mentoria Raio-X da Aprovação é a forma mais completa de entender e <b>aplicar</b> o Método
             que me levou a ser o <b>melhor do Brasil no Enem 2021</b>.</p>
-            <div id="card-mentoria">
-                <img src="CapaMentoria.png" alt="Imagem de Capa da Mentoria."/>
-                <div id="card-mentoria-content">
-                    <h2>Mentoria Raio-X</h2>
-                    <p>Próxima abertura de vagas: <b>Março/2023</b></p>
-                    <button class="disabled">Aguarde</button>
-                    <a id="show-mentoria-beneficios" href="javascript:showMentoriaBenefits()">Mostrar benefícios</a>
-                    <div id="beneficios-mentoria">
-                        <ul>
-                            <li><i class="fa fa-video"></i>Chamadas de vídeo coletivas comigo 2x ao mês</li>
-                            <li><i class="fa fa-clipboard-list"></i>Acesso a simulados exclusivos com tema de redação inédito</li>
-                            <li><i class="fa fa-comment"></i>Chat prioritário para tirar dúvidas</li>
-                        </ul>
+            <div class="card-container">
+                <div id="card-mentoria">
+                    <img src="CapaMentoria.png" alt="Imagem de Capa da Mentoria."/>
+                    <div id="card-mentoria-content">
+                        <h2>Mentoria Raio-X</h2>
+                        <p>Próxima abertura de vagas: <b>26/02/2023</b></p>
+                        <a href="https://youtube.com/live/UVnulmPxCR8?feature=share"><button>Confira</button></a>
+                        <a id="show-mentoria-beneficios" href="javascript:showMentoriaBenefits()">Mostrar benefícios</a>
+                        <div id="beneficios-mentoria">
+                            <ul>
+                                <li><i class="fa fa-video"></i>Chamadas de vídeo coletivas comigo 2x ao mês</li>
+                                <li><i class="fa fa-comment"></i>Chat prioritário para tirar dúvidas</li>
+                                <li>Por meio dos quais te ensino a:</li>
+                                <li><i class="fa fa-bullseye"></i>Trabalhar com metas diárias</li>
+                                <li><i class="fa fa-book"></i>Priorizar assuntos</li>
+                                <li><i class="fa fa-shield"></i>Dominar cada dia de prova</li>
+                                <li><i class="fa fa-plus"></i>e muito mais...</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
             <p>Em meus eBooks, você também vislumbra partes importantes do Método:</p>
-            <div id="card-cti-ling">
-                <img src="CapaCTILinguagens.png" alt="Imagem de Capa do eBook CTI do Enem: Linguagens."/>
-                <div id="card-cti-ling-content">
-                    <h2>CTI do Enem: Linguagens</h2>
-                    <p>Um compilado de técnicas práticas para decifrar a prova de Linguagens</p>
-                    <a href="https://pay.hotmart.com/C76382707N"><button>Adquirir <i class="fa fa-arrow-right"></i></button></a>
+            <div class="card-container">
+                <div id="card-cti-ling">
+                    <img src="CapaCTILinguagens.png" alt="Imagem de Capa do eBook CTI do Enem: Linguagens."/>
+                    <div id="card-cti-ling-content">
+                        <h2>CTI do Enem: Linguagens</h2>
+                        <p>Um compilado de técnicas práticas para decifrar a prova de Linguagens</p>
+                        <h3>R$15</h3>
+                        <a href="https://pay.hotmart.com/C76382707N"><button>Adquirir <i class="fa fa-arrow-right"></i></button></a>
+                    </div>
                 </div>
-            </div>
-            <div id="card-estrat-01">
-                <img src="Estrategia.png" alt="Imagem de Capa do eBook Estratégia do 01 do Enem."/>
-                <div id="card-estrat-01-content">
-                    <h2>A Estratégia<br>do 01 do Enem</h2>
-                    <p>Insights sobre como otimizar seus estudos para conquistar o 2º dia do Enem</p>
-                    <a href="https://hotmart.com/pt-br/marketplace/produtos/a-estrategia-do-01-do-enem/U74213816Y"><button>Adquirir <i class="fa fa-arrow-right"></i></button></a>
+                <div id="card-estrat-01">
+                    <img src="Estrategia.png" alt="Imagem de Capa do eBook Estratégia do 01 do Enem."/>
+                    <div id="card-estrat-01-content">
+                        <h2>A Estratégia<br>do 01 do Enem</h2>
+                        <p>Insights sobre como otimizar seus estudos para conquistar o 2º dia do Enem</p>
+                        <h3>R$45</h3>
+                        <a href="https://hotmart.com/pt-br/marketplace/produtos/a-estrategia-do-01-do-enem/U74213816Y"><button>Adquirir <i class="fa fa-arrow-right"></i></button></a>
+                    </div>
                 </div>
             </div>
         </div>
