@@ -86,7 +86,7 @@ button {
     opacity: 0;
     position:fixed;
     transform: scale(0);
-    top:max(15vh,32vw);
+    top:max(6vh,13vw);
     right:4%;
     width:fit-content;
     border: 1px solid rgba(0,0,0,.1);
@@ -640,6 +640,7 @@ button {
     position: absolute;
     top:12.5%;
     right:8%;
+    max-height:500px;
 }
 
 #quem-sou-eu img {
@@ -667,18 +668,11 @@ button {
     }
 }
 
-@media (max-width: 320px) and (max-width: 580px) {
-    .andre {
-        display:none;
-    }
-
-    #quem-sou-eu img {
-        width:100%;
-        float:inherit;
-    }
-}
-
 @media (min-width: 320px) and (max-width: 580px) {
+
+    #nav-modal {
+        top:max(15vh,32vw);
+    }
 
     #intro {
         padding:.6em;
@@ -766,4 +760,16 @@ button {
         width:75%;
     }
     
+}
+
+@media (max-width: 340px){
+    .andre {
+        width:48%;
+        height: auto;
+    }
+
+    #quem-sou-eu img {
+        width:100%;
+        float:inherit;
+    }
 }
