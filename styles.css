@@ -189,12 +189,12 @@ button {
 
 .blob-blue {
     background-color: #082fda;
-    animation: blob-move-blue 80s alternate infinite;
+    animation: blob-move-blue 60s alternate infinite;
 }
 
 .blob-purple {
     background-color: #5c08da;
-    animation: blob-move-purple 97s alternate infinite;
+    animation: blob-move-purple 77s alternate infinite;
 }
 
 @keyframes blob-move-blue {
