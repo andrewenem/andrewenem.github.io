@@ -36,6 +36,11 @@ button {
     cursor: pointer;
 }
 
+.s {
+	opacity:50%;
+	font-size:90%;
+}
+
 #header {
     position: fixed;
     top:0;
@@ -523,18 +528,64 @@ button {
     margin: 2.3em 1em auto auto;
     width:75%;
     max-width:20em;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 #card-mentoria {
-    background-color: #082fda;
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 100% 70%, rgba(62, 163, 176, 1) 0%, rgba(62, 134, 176, 1) 34%, rgba(6, 33, 153, 1) 83%, rgba(4, 8, 103, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 100% 70%, rgba(62, 163, 176, 1) 0%, rgba(62, 134, 176, 1) 34%, rgba(6, 33, 153, 1) 83%, rgba(4, 8, 103, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 100% 70%, rgba(62, 163, 176, 1) 0%, rgba(62, 134, 176, 1) 34%, rgba(6, 33, 153, 1) 83%, rgba(4, 8, 103, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 100% 70%, rgba(62, 163, 176, 1) 0%, rgba(62, 134, 176, 1) 34%, rgba(6, 33, 153, 1) 83%, rgba(4, 8, 103, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 100% 70%, rgba(62, 163, 176, 1) 0%, rgba(62, 134, 176, 1) 34%, rgba(6, 33, 153, 1) 83%, rgba(4, 8, 103, 1) 100%);
+
+	border-radius:1.5em;
 }
+     
 
 #card-cti-ling {
-    background-color: #871b00;
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 25% 84%, rgba(233, 63, 21, 1) 0%, rgba(135, 27, 0, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 25% 84%, rgba(233, 63, 21, 1) 0%, rgba(135, 27, 0, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 25% 84%, rgba(233, 63, 21, 1) 0%, rgba(135, 27, 0, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 25% 84%, rgba(233, 63, 21, 1) 0%, rgba(135, 27, 0, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 25% 84%, rgba(233, 63, 21, 1) 0%, rgba(135, 27, 0, 1) 100%);
+	
 }
 
 #card-estrat-01 {
-    background-color: #03135e;
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 47% 21%, rgba(52, 74, 177, 1) 0%, rgba(3, 19, 94, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 47% 21%, rgba(52, 74, 177, 1) 0%, rgba(3, 19, 94, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 47% 21%, rgba(52, 74, 177, 1) 0%, rgba(3, 19, 94, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 47% 21%, rgba(52, 74, 177, 1) 0%, rgba(3, 19, 94, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 47% 21%, rgba(52, 74, 177, 1) 0%, rgba(3, 19, 94, 1) 100%);
+
 }
 
 #card-mentoria img,
@@ -590,7 +641,7 @@ button {
 #card-mentoria a:nth-of-type(2) {
     background-color: rgba(255,255,255,.2);
     padding:.6em;
-    border-radius: .6em;
+    border-radius: 2em;
     display: block;
     margin-bottom:.1em;
     color: white;
