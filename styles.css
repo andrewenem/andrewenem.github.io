@@ -145,6 +145,15 @@ button {
     transform: translate(3px, 3px);
 }
 
+.section > h2 {
+	text-align:center;
+	font-size:2.3em;
+}
+
+.section > h2 > i {
+	padding-right:.33em;
+}
+
 #intro *:not(i) {
     font-family: Rubik;
 }
@@ -351,12 +360,6 @@ button {
     z-index: 50;
 }
 
-#quem-sou-eu h2,
-#resultados h2,
-#metodo h2 {
-    font-size:1.6em;
-}
-
 #quem-sou-eu img {
     width:100%;
     border-radius: 1em;
@@ -379,13 +382,6 @@ button {
 #quem-sou-eu-more,
 #metodo-more {
     display: none;
-}
-
-#quem-sou-eu h2 > i,
-#resultados h2 > i,
-#metodo h2 > i {
-    padding-right:.4em;
-    padding-left:.6em;
 }
 
 #quem-sou-eu p,
@@ -513,6 +509,20 @@ button {
     margin-top:3em;
 }
 
+.product-title {
+	text-align:center;
+	font-size:2.1em;
+	color:#001b97;
+	margin-bottom:0;
+	background-color:#eef9ff;
+	padding:.5em .4em;
+	border-radius:.7em;
+}
+
+.product-title i {
+	margin-right: .5em;
+}
+
 .card-container {
     text-align: center;
 }
@@ -520,7 +530,7 @@ button {
 .card {
     display: inline-block;
     padding:.6em;
-    border-radius: 1em;
+    border-radius:1.5em;
     color: white;
     text-align: center;
     margin: 2.3em 1em auto auto;
@@ -566,26 +576,25 @@ button {
     /* global 92%+ browsers support */
     background:radial-gradient(circle at 100% 70%, rgb(214 242 246) 0%, rgb(224 249 243) 34%, rgb(212 232 251) 83%, rgb(231 242 253) 100%);
 
-	border-radius:1.5em;
 	color:rgb(0, 13, 72);
 }
      
 
 #card-cti-ling {
     /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 25% 84%, rgba(233, 63, 21, 1) 0%, rgba(135, 27, 0, 1) 100%);
+    background:-moz-radial-gradient(circle at 100% 70%, rgb(255 171 32) 0%, rgb(215 90 22) 34%, rgb(180 18 18) 83%, rgb(142 58 38) 100%);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 25% 84%, rgba(233, 63, 21, 1) 0%, rgba(135, 27, 0, 1) 100%);
+    background:-webkit-radial-gradient(circle at 100% 70%, rgb(255 171 32) 0%, rgb(215 90 22) 34%, rgb(180 18 18) 83%, rgb(142 58 38) 100%);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 25% 84%, rgba(233, 63, 21, 1) 0%, rgba(135, 27, 0, 1) 100%);
+    background:-o-radial-gradient(circle at 100% 70%, rgb(255 171 32) 0%, rgb(215 90 22) 34%, rgb(180 18 18) 83%, rgb(142 58 38) 100%);
 
     /* ie 10+ */
-    background:-ms-radial-gradient(circle at 25% 84%, rgba(233, 63, 21, 1) 0%, rgba(135, 27, 0, 1) 100%);
+    background:-ms-radial-gradient(circle at 100% 70%, rgb(255 171 32) 0%, rgb(215 90 22) 34%, rgb(180 18 18) 83%, rgb(142 58 38) 100%);
 
     /* global 92%+ browsers support */
-    background:radial-gradient(circle at 25% 84%, rgba(233, 63, 21, 1) 0%, rgba(135, 27, 0, 1) 100%);
+    background:radial-gradient(circle at 100% 70%, rgb(255 171 32) 0%, rgb(215 90 22) 34%, rgb(180 18 18) 83%, rgb(142 58 38) 100%);
 	
 }
 
