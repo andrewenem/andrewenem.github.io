@@ -517,9 +517,7 @@ button {
     text-align: center;
 }
 
-#card-mentoria,
-#card-cti-ling,
-#card-estrat-01 {
+.card {
     display: inline-block;
     padding:.6em;
     border-radius: 1em;
@@ -549,6 +547,27 @@ button {
     background:radial-gradient(circle at 100% 70%, rgba(62, 163, 176, 1) 0%, rgba(62, 134, 176, 1) 34%, rgba(6, 33, 153, 1) 83%, rgba(4, 8, 103, 1) 100%);
 
 	border-radius:1.5em;
+}
+
+#card-cti-nat {
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 100% 70%, rgb(214 242 246) 0%, rgb(224 249 243) 34%, rgb(212 232 251) 83%, rgb(231 242 253) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 100% 70%, rgb(214 242 246) 0%, rgb(224 249 243) 34%, rgb(212 232 251) 83%, rgb(231 242 253) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 100% 70%, rgb(214 242 246) 0%, rgb(224 249 243) 34%, rgb(212 232 251) 83%, rgb(231 242 253) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 100% 70%, rgb(214 242 246) 0%, rgb(224 249 243) 34%, rgb(212 232 251) 83%, rgb(231 242 253) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 100% 70%, rgb(214 242 246) 0%, rgb(224 249 243) 34%, rgb(212 232 251) 83%, rgb(231 242 253) 100%);
+
+	border-radius:1.5em;
+	color:rgb(0, 13, 72);
 }
      
 
@@ -588,9 +607,7 @@ button {
 
 }
 
-#card-mentoria img,
-#card-cti-ling img,
-#card-estrat-01 img {
+.card img {
     margin:.6em auto;
     border-radius: .6em;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 20px -20px;
@@ -599,21 +616,15 @@ button {
     display: inline-block;
 }
 
-#card-mentoria h2,
-#card-cti-ling h2,
-#card-estrat-01 h2 {
+.card h2 {
     margin:0;
 }
 
-#card-mentoria p,
-#card-cti-ling p,
-#card-estrat-01 p {
+.card p {
     margin-top:.1em;
 }
 
-#card-mentoria button,
-#card-cti-ling button,
-#card-estrat-01 button {
+.card button {
     display: block;
     font-family: Rubik;
     font-size:1.1em;
@@ -631,9 +642,7 @@ button {
     font-size: 120%;
 }
 
-#card-mentoria button .fa-arrow-right,
-#card-cti-ling button .fa-arrow-right,
-#card-estrat-01 button .fa-arrow-right {
+.card button .fa-arrow-right {
     font-size:90%;
     padding-left:.3em;
 }
@@ -791,9 +800,7 @@ button {
         margin-left:35%;
     }
 
-    #card-mentoria,
-    #card-cti-ling,
-    #card-estrat-01 {
+    .card {
         padding:.6em;
         border-radius: 1em;
         color: white;
