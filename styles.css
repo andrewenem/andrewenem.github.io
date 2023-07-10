@@ -580,21 +580,39 @@ button {
 }
      
 
-#card-cti-ling {
+#card-cti-hum {
     /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 100% 70%, rgb(255 171 32) 0%, rgb(215 90 22) 34%, rgb(180 18 18) 83%, rgb(142 58 38) 100%);
+    background:-moz-radial-gradient(circle at 40% 100%, rgb(204 158 65) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 100% 70%, rgb(255 171 32) 0%, rgb(215 90 22) 34%, rgb(180 18 18) 83%, rgb(142 58 38) 100%);
+    background:-webkit-radial-gradient(circle at 40% 100%, rgb(204 158 65) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 100% 70%, rgb(255 171 32) 0%, rgb(215 90 22) 34%, rgb(180 18 18) 83%, rgb(142 58 38) 100%);
+    background:-o-radial-gradient(circle at 40% 100%, rgb(204 158 65) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
 
     /* ie 10+ */
-    background:-ms-radial-gradient(circle at 100% 70%, rgb(255 171 32) 0%, rgb(215 90 22) 34%, rgb(180 18 18) 83%, rgb(142 58 38) 100%);
+    background:-ms-radial-gradient(circle at 40% 100%, rgb(204 158 65) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
 
     /* global 92%+ browsers support */
-    background:radial-gradient(circle at 100% 70%, rgb(255 171 32) 0%, rgb(215 90 22) 34%, rgb(180 18 18) 83%, rgb(142 58 38) 100%);
+    background:radial-gradient(circle at 40% 100%, rgb(204 158 65) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
+	
+}
+
+#card-cti-ling {
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 100% 70%, rgb(206 129 2) 0%, rgb(179 81 28) 34%, rgb(145 4 4) 83%, rgb(131 30 5) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 100% 70%, rgb(206 129 2) 0%, rgb(179 81 28) 34%, rgb(145 4 4) 83%, rgb(131 30 5) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 100% 70%, rgb(206 129 2) 0%, rgb(179 81 28) 34%, rgb(145 4 4) 83%, rgb(131 30 5) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 100% 70%, rgb(206 129 2) 0%, rgb(179 81 28) 34%, rgb(145 4 4) 83%, rgb(131 30 5) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 100% 70%, rgb(206 129 2) 0%, rgb(179 81 28) 34%, rgb(145 4 4) 83%, rgb(131 30 5) 100%);
 	
 }
 
