@@ -203,12 +203,12 @@ button {
 
 .blob-blue {
     background-color: #082fda;
-    animation: blob-move-blue 40s alternate infinite;
+    animation: blob-move-blue 30s alternate infinite;
 }
 
 .blob-purple {
     background-color: #5c08da;
-    animation: blob-move-purple 57s alternate infinite;
+    animation: blob-move-purple 37s alternate infinite;
 }
 
 @keyframes blob-move-blue {
@@ -228,13 +228,13 @@ button {
         transform: translate(12%,3%);
         rotate:90deg;
         width:110%;
-        background-color: #082fda;
+        background-color: #4213cf;
     }
 
     75% {
         transform: translate(16%,10%);
         rotate:200deg;
-        background-color: #0871da;
+        background-color: #159497;
     }
 
     100% {
@@ -261,7 +261,7 @@ button {
     60% {
         transform: translate(-12%,-70%);
         rotate:90deg;
-        background-color: #009584;
+        background-color: #563c94;
         opacity: 100%;
     }
 
@@ -582,19 +582,19 @@ button {
 
 #card-cti-hum {
     /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 40% 100%, rgb(204 158 65) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
+    background:-moz-radial-gradient(circle at 40% 100%, rgb(236 178 60) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 40% 100%, rgb(204 158 65) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
+    background:-webkit-radial-gradient(circle at 40% 100%, rgb(236 178 60) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 40% 100%, rgb(204 158 65) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
+    background:-o-radial-gradient(circle at 40% 100%, rgb(236 178 60) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
 
     /* ie 10+ */
-    background:-ms-radial-gradient(circle at 40% 100%, rgb(204 158 65) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
+    background:-ms-radial-gradient(circle at 40% 100%, rgb(236 178 60) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
 
     /* global 92%+ browsers support */
-    background:radial-gradient(circle at 40% 100%, rgb(204 158 65) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
+    background:radial-gradient(circle at 40% 100%, rgb(236 178 60) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
 	
 }
 
@@ -780,7 +780,7 @@ button {
     .andre {
         float: right;
         position: absolute;
-        top:18%;
+        top:22%;
         width:54%;
         height: auto;
         right:0;
