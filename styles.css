@@ -584,19 +584,19 @@ button {
 
 #card-cti-hum {
     /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 40% 100%, rgb(236 178 60) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
+    background:-moz-radial-gradient(circle at 40% 100%, rgb(199 148 45) 0%, rgb(118 77 19) 34%, rgb(113 75 13) 69%, rgb(152 95 22) 100%);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 40% 100%, rgb(236 178 60) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
+    background:-webkit-radial-gradient(circle at 40% 100%, rgb(199 148 45) 0%, rgb(118 77 19) 34%, rgb(113 75 13) 69%, rgb(152 95 22) 100%);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 40% 100%, rgb(236 178 60) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
+    background:-o-radial-gradient(circle at 40% 100%, rgb(199 148 45) 0%, rgb(118 77 19) 34%, rgb(113 75 13) 69%, rgb(152 95 22) 100%);
 
     /* ie 10+ */
-    background:-ms-radial-gradient(circle at 40% 100%, rgb(236 178 60) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
+    background:-ms-radial-gradient(circle at 40% 100%, rgb(199 148 45) 0%, rgb(118 77 19) 34%, rgb(113 75 13) 69%, rgb(152 95 22) 100%);
 
     /* global 92%+ browsers support */
-    background:radial-gradient(circle at 40% 100%, rgb(236 178 60) 0%, rgb(156 104 33) 34%, rgb(149 104 30) 69%, rgb(184 130 61) 100%);
+    background:radial-gradient(circle at 40% 100%, rgb(199 148 45) 0%, rgb(118 77 19) 34%, rgb(113 75 13) 69%, rgb(152 95 22) 100%);
 	
 }
 
