@@ -512,11 +512,12 @@ button {
 .product-title {
 	text-align:center;
 	font-size:2.1em;
-	color:#001b97;
-	margin-bottom:0;
-	background-color:#eef9ff;
+	color:#051870;
+	margin:auto;
+	background-color:#eff4ff;
 	padding:.5em .4em;
 	border-radius:.7em;
+	width:max(33%,260px);
 }
 
 .product-title i {
@@ -529,13 +530,13 @@ button {
 
 .card {
     display: inline-block;
-    padding:.6em;
-    border-radius:1.5em;
+    padding:.85em;
+    border-radius:1.5rem;
     color: white;
     text-align: center;
     margin: 2.3em 1em auto auto;
     width:75%;
-    max-width:20em;
+    max-width:22em;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
@@ -557,6 +558,7 @@ button {
     background:radial-gradient(circle at 100% 70%, rgba(62, 163, 176, 1) 0%, rgba(62, 134, 176, 1) 34%, rgba(6, 33, 153, 1) 83%, rgba(4, 8, 103, 1) 100%);
 
 	border-radius:1.5em;
+	max-width:500px;
 }
 
 #card-cti-nat {
@@ -828,12 +830,12 @@ button {
     }
 
     .card {
-        padding:.6em;
-        border-radius: 1em;
+        padding:2rem .9rem 1.3rem .9rem;
+        border-radius: 1.66rem;
         color: white;
         text-align: center;
         margin: 2.3em auto auto auto;
-        width:75%;
+        width:82%;
     }
     
 }
