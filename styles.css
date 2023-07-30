@@ -38,7 +38,15 @@ button {
 
 .s {
 	opacity:50%;
-	font-size:90%;
+	font-size:96%;
+	font-weight:500;
+	text-decoration-thickness: 2px;
+	text-decoration-color:rgba(255,255,255,.8);
+}
+
+.s + h3 {
+	display:inline-block;
+	margin:1em .3em;
 }
 
 #header {
@@ -79,7 +87,21 @@ button {
 
 #header .fa-instagram,
 #header .fa-youtube {
-    opacity: 75%;
+    background-color:rgba(0,0,50,.12);
+	outline:solid 2px rgba(255,255,255,.1);
+	border-radius:.4rem;
+	padding:.4rem;
+	text-align:center;
+	transition:all ease .16s;
+}
+
+#header .fa-instagram:hover,
+#header .fa-youtube:hover {
+    background-color:rgba(125,205,255,.18);
+	outline:solid 2px rgba(255,255,255,.4);
+	border-radius:.4rem;
+	padding:.4rem;
+	text-align:center;
 }
 
 #footer {
