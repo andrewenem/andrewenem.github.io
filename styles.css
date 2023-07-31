@@ -225,12 +225,12 @@ button {
 
 .blob-blue {
     background-color: #082fda;
-    animation: blob-move-blue 30s alternate infinite;
+    animation: blob-move-blue 35s alternate infinite;
 }
 
 .blob-purple {
     background-color: #5c08da;
-    animation: blob-move-purple 37s alternate infinite;
+    animation: blob-move-purple 42s alternate infinite;
 }
 
 @keyframes blob-move-blue {
@@ -586,21 +586,41 @@ button {
 #card-cti-nat {
 
     /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 100% 70%, rgb(214 242 246) 0%, rgb(224 249 243) 34%, rgb(212 232 251) 83%, rgb(231 242 253) 100%);
+    background:-moz-radial-gradient(circle at 90% 10%, rgb(169 210 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 100% 70%, rgb(214 242 246) 0%, rgb(224 249 243) 34%, rgb(212 232 251) 83%, rgb(231 242 253) 100%);
+    background:-webkit-radial-gradient(circle at 90% 10%, rgb(169 210 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 100% 70%, rgb(214 242 246) 0%, rgb(224 249 243) 34%, rgb(212 232 251) 83%, rgb(231 242 253) 100%);
+    background:-o-radial-gradient(circle at 90% 10%, rgb(169 210 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
 
     /* ie 10+ */
-    background:-ms-radial-gradient(circle at 100% 70%, rgb(214 242 246) 0%, rgb(224 249 243) 34%, rgb(212 232 251) 83%, rgb(231 242 253) 100%);
+    background:-ms-radial-gradient(circle at 90% 10%, rgb(169 210 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
 
     /* global 92%+ browsers support */
-    background:radial-gradient(circle at 100% 70%, rgb(214 242 246) 0%, rgb(224 249 243) 34%, rgb(212 232 251) 83%, rgb(231 242 253) 100%);
+    background:radial-gradient(circle at 90% 10%, rgb(169 210 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
 
-	color:rgb(0, 13, 72);
+	color:rgb(255, 255, 255);
+}
+
+#card-cti-mat {
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 10% 40%, rgb(164 91 194) 0%, rgb(102 72 157) 54%, rgb(59 13 109) 83%, rgb(32 56 93) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 10% 40%, rgb(164 91 194) 0%, rgb(102 72 157) 54%, rgb(59 13 109) 83%, rgb(32 56 93) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 10% 40%, rgb(164 91 194) 0%, rgb(102 72 157) 54%, rgb(59 13 109) 83%, rgb(32 56 93) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 10% 40%, rgb(164 91 194) 0%, rgb(102 72 157) 54%, rgb(59 13 109) 83%, rgb(32 56 93) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 10% 40%, rgb(164 91 194) 0%, rgb(102 72 157) 54%, rgb(59 13 109) 83%, rgb(32 56 93) 100%);
+
+	color:rgb(255, 255, 255);
 }
      
 
@@ -657,6 +677,8 @@ button {
     background:radial-gradient(circle at 47% 21%, rgba(52, 74, 177, 1) 0%, rgba(3, 19, 94, 1) 100%);
 
 }
+
+
 
 .card img {
     margin:.6em auto;
