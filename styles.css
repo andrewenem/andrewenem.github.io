@@ -61,6 +61,7 @@ button {
     width:100%;
     z-index: 100;
     transition: all ease .5s;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 
 .sticky {
@@ -206,7 +207,7 @@ button {
     padding-top:16%;
     padding-left:6.5%;
     padding-right:6.5%;
-    background: rgb(0, 0, 78);
+    background: radial-gradient(circle at 20% 30%, rgba(4,67,135,1) 0%, rgba(11,0,77,1) 57%, rgba(2,0,36,1) 100%);
     padding-bottom:3em;
     overflow: hidden;
     height:fit-content;
@@ -586,19 +587,19 @@ button {
 #card-cti-nat {
 
     /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 90% 10%, rgb(169 210 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
+    background:-moz-radial-gradient(circle at 90% 10%, rgb(167 201 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 90% 10%, rgb(169 210 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
+    background:-webkit-radial-gradient(circle at 90% 10%, rgb(167 201 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 90% 10%, rgb(169 210 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
+    background:-o-radial-gradient(circle at 90% 10%, rgb(167 201 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
 
     /* ie 10+ */
-    background:-ms-radial-gradient(circle at 90% 10%, rgb(169 210 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
+    background:-ms-radial-gradient(circle at 90% 10%, rgb(167 201 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
 
     /* global 92%+ browsers support */
-    background:radial-gradient(circle at 90% 10%, rgb(169 210 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
+    background:radial-gradient(circle at 90% 10%, rgb(167 201 155) 0%, rgb(33 150 113) 34%, rgb(15 77 87) 90%);
 
 	color:rgb(255, 255, 255);
 }
