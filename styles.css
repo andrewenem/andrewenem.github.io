@@ -409,7 +409,7 @@ button {
 
 #quem-sou-eu p,
 #resultados p,
-#metodo p {
+#metodo > p {
     padding:0 1em;
 }
 
@@ -561,6 +561,79 @@ button {
     width:75%;
     max-width:22em;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	overflow: hidden;
+	position:relative;
+}
+
+.big-icon {
+	font-size:17em;
+	opacity:6%;
+	top:50%;
+	left:9%;
+	position:absolute;
+	rotate:10deg;
+	z-index:0;
+}
+
+.big-icon.fa-comments {
+	font-size:15em;
+	opacity:7%;
+	left:5%;
+	rotate:-6deg;
+}
+
+.big-icon.estrat-tag {
+	opacity:8%;
+}
+
+.big-icon.nat-tag {
+	rotate:-10deg;
+}
+
+.new {
+	padding:.3em 0;
+	border-radius:.4em;
+	margin:auto auto .8em auto;
+	font-size:90%;
+	font-weight:500;
+	max-width:10em;
+	position:relative;
+	z-index:2;
+}
+
+.ebook-page-count {
+	padding:.3em 0;
+	border-radius:.4em;
+	max-width:10em;
+	margin:-1.2em auto .4em auto;
+	font-size:70%;
+	font-weight:300;
+	opacity:40%;
+}
+
+.new i, .new p,
+.ebook-page-count i, .ebook-page-count p {
+	display:inline-block;
+	padding:0;
+	margin-bottom:0;
+}
+
+.new i {
+	margin-right:.6em;
+}
+
+.ebook-page-count.ling-tag,
+.ebook-page-count.hum-tag {
+	color: antiquewhite;
+}
+
+.new.ling-tag,
+.new.hum-tag {
+	background-color: rgba(250, 235, 215, 1);
+}
+
+.new.mat-tag {
+	background-color: rgba(115, 59, 163, 1);
 }
 
 #card-mentoria {
@@ -607,19 +680,19 @@ button {
 #card-cti-mat {
 
     /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 10% 40%, rgb(164 91 194) 0%, rgb(102 72 157) 54%, rgb(59 13 109) 83%, rgb(32 56 93) 100%);
+    background:-moz-radial-gradient(circle at 10% 40%, rgb(154 61 169) 0%, rgb(53 19 114) 54%, rgb(27 0 57) 83%, rgb(7 25 53) 100%);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 10% 40%, rgb(164 91 194) 0%, rgb(102 72 157) 54%, rgb(59 13 109) 83%, rgb(32 56 93) 100%);
+    background:-webkit-radial-gradient(circle at 10% 40%, rgb(154 61 169) 0%, rgb(53 19 114) 54%, rgb(27 0 57) 83%, rgb(7 25 53) 100%);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 10% 40%, rgb(164 91 194) 0%, rgb(102 72 157) 54%, rgb(59 13 109) 83%, rgb(32 56 93) 100%);
+    background:-o-radial-gradient(circle at 10% 40%, rgb(154 61 169) 0%, rgb(53 19 114) 54%, rgb(27 0 57) 83%, rgb(7 25 53) 100%);
 
     /* ie 10+ */
-    background:-ms-radial-gradient(circle at 10% 40%, rgb(164 91 194) 0%, rgb(102 72 157) 54%, rgb(59 13 109) 83%, rgb(32 56 93) 100%);
+    background:-ms-radial-gradient(circle at 10% 40%, rgb(154 61 169) 0%, rgb(53 19 114) 54%, rgb(27 0 57) 83%, rgb(7 25 53) 100%);
 
     /* global 92%+ browsers support */
-    background:radial-gradient(circle at 10% 40%, rgb(164 91 194) 0%, rgb(102 72 157) 54%, rgb(59 13 109) 83%, rgb(32 56 93) 100%);
+    background:radial-gradient(circle at 10% 40%, rgb(154 61 169) 0%, rgb(53 19 114) 54%, rgb(27 0 57) 83%, rgb(7 25 53) 100%);
 
 	color:rgb(255, 255, 255);
 }
@@ -685,13 +758,17 @@ button {
     margin:.6em auto;
     border-radius: .6em;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 20px -20px;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(255,255,255,.1);
     width: 10em;
     display: inline-block;
+	position:relative;
+	z-index:10;
 }
 
 .card h2 {
     margin:0;
+	line-height:96%;
+	margin-bottom:.2em;
 }
 
 .card p {
@@ -710,6 +787,8 @@ button {
     background-color: rgb(255, 247, 0);
     margin: 0 auto 1em auto;
     transition: all ease .3s;
+	position:relative;
+	z-index:10;
 }
 
 #card-mentoria p > b {
