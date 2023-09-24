@@ -710,19 +710,19 @@ button {
 #card-mentoria {
 
     /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 100% 70%, rgb(4 23 68) 0%, rgb(16 34 80) 34%, rgb(12 37 144) 83%, rgb(86 90 187) 100%);
+    background:-moz-radial-gradient(circle at 100% 70%, rgb(4 23 68) 0%, rgb(16 16 80) 34%, rgb(19 26 57) 83%, rgb(18 19 46) 100%);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 100% 70%, rgb(4 23 68) 0%, rgb(16 34 80) 34%, rgb(12 37 144) 83%, rgb(86 90 187) 100%);
+    background:-webkit-radial-gradient(circle at 100% 70%, rgb(4 23 68) 0%, rgb(16 16 80) 34%, rgb(19 26 57) 83%, rgb(18 19 46) 100%);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 100% 70%, rgb(4 23 68) 0%, rgb(16 34 80) 34%, rgb(12 37 144) 83%, rgb(86 90 187) 100%);
+    background:-o-radial-gradient(circle at 100% 70%, rgb(4 23 68) 0%, rgb(16 16 80) 34%, rgb(19 26 57) 83%, rgb(18 19 46) 100%);
 
     /* ie 10+ */
-    background:-ms-radial-gradient(circle at 100% 70%, rgb(4 23 68) 0%, rgb(16 34 80) 34%, rgb(12 37 144) 83%, rgb(86 90 187) 100%);
+    background:-ms-radial-gradient(circle at 100% 70%, rgb(4 23 68) 0%, rgb(16 16 80) 34%, rgb(19 26 57) 83%, rgb(18 19 46) 100%);
 
     /* global 92%+ browsers support */
-    background:radial-gradient(circle at 100% 70%, rgb(4 23 68) 0%, rgb(16 34 80) 34%, rgb(12 37 144) 83%, rgb(86 90 187) 100%);
+    background:radial-gradient(circle at 100% 70%, rgb(4 23 68) 0%, rgb(16 16 80) 34%, rgb(19 26 57) 83%, rgb(18 19 46) 100%);
 
 	border-radius:1.5em;
 	max-width:500px;
@@ -877,10 +877,12 @@ button {
 .card button i {
     font-size:90%;
     padding-left:.3em;
+	color:#03135e;
 }
 
 .card button:hover {
 	background-color:rgb(143, 255, 188);
+	color:#03135e;
 }
 
 #card-mentoria a:nth-of-type(2) {
@@ -896,15 +898,16 @@ button {
     display: none;
 }
 
-#beneficios-mentoria li {
+#beneficios-mentoria li, #card-mentoria-content ul li {
     text-align: left;
-    margin-bottom:.2em;
+    margin-bottom:.5em;
     margin-left:-1em;
     list-style: none;
 }
 
-#beneficios-mentoria li > i {
+#beneficios-mentoria li > i, #card-mentoria-content ul li > i {
     padding-right:.5em;
+	color:yellow;
 }
 
 #metodo .fa-circle-check {
