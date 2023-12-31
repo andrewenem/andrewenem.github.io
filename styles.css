@@ -11,8 +11,8 @@ box-sizing: inherit;
 }
 
 body {
-    background-color: rgb(12 12 37);
-    font-family: Rubik;
+    background-color: rgb(22 37 75);
+    font-family: Inter;
     margin:0;
 }
 
@@ -37,7 +37,7 @@ button {
 }
 
 .s {
-	opacity:50%;
+	opacity:70%;
 	font-size:96%;
 	font-weight:500;
 	text-decoration-thickness: 2px;
@@ -178,7 +178,7 @@ button {
 }
 
 #intro *:not(i) {
-    font-family: Rubik;
+    font-family: Inter;
 }
 
 #intro a {
@@ -207,7 +207,8 @@ button {
     padding-top:16%;
     padding-left:6.5%;
     padding-right:6.5%;
-    background: radial-gradient(circle at 20% 30%, rgba(4,67,135,1) 0%, rgba(11,0,77,1) 57%, rgba(2,0,36,1) 100%);
+    background-color: #164290;
+	background-image: radial-gradient(circle at 40% 30%, #2970b3 0%, #164290 25%, #0e0945 100%);
     padding-bottom:3em;
     overflow: hidden;
     height:fit-content;
@@ -310,6 +311,7 @@ button {
     float:left;
     font-size:max(4vw,4em);
     position: relative;
+	font-weight: 800;
 }
 
 #intro h1 > br {
@@ -325,9 +327,8 @@ button {
 #intro button {
     background-color: rgb(255, 247, 0);
     color:#03135e;
-    backdrop-filter: blur(5px);
-    font-family: Rubik;
-    font-weight: 500;
+    font-family: Inter;
+    font-weight: 600;
     z-index: 1;
     border: none;
     font-size: 1.44em;
@@ -394,7 +395,7 @@ button {
 }
 
 #metodo {
-	background:radial-gradient(circle at 20% 0%, rgb(14 17 60) 0%, rgb(25 25 46) 57%, rgb(9 7 32) 100%);
+	background:radial-gradient(circle at 20% 0%, rgb(48 56 88) 0%, rgb(27 32 60) 57%, rgb(54 52 81) 100%);
 	color:#fffff1;
 	border:1px solid rgba(255,255,255,.3);
 }
@@ -433,7 +434,7 @@ button {
 	padding:.8em 2em;
 	border-radius:2em;
 	border:none;
-	font-family:Rubik;
+	font-family:Inter;
 	margin-top:.6em;
 }
 
@@ -613,14 +614,19 @@ button {
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 	overflow: hidden;
 	position:relative;
+	/*
 	border-style: solid;
 	border-color:rgba(255,255,255,.2);
-	border-width: 1px 2px 3px 2px;
+	border-width: 1px 2px 3px 2px;*/
+}
+
+.card > div > h3 {
+	font-weight:800;
 }
 
 .big-icon {
 	font-size:17em;
-	opacity:8%;
+	opacity:12%;
 	top:50%;
 	left:9%;
 	position:absolute;
@@ -635,7 +641,7 @@ button {
 
 .big-icon.fa-comments {
 	font-size:15em;
-	opacity:9%;
+	opacity:17%;
 	left:5%;
 	rotate:-6deg;
 }
@@ -667,25 +673,21 @@ button {
 }
 
 .ebook-page-count p {
-	font-size:70%;
+	font-size:80%;
 	font-weight:300;
 	opacity:40%;
-}
-
-.ebook-page-count.mat-tag p {
-	color:white;
-	opacity: 70% !important;
 }
 
 .new i, .new p,
 .ebook-page-count i, .ebook-page-count p {
 	display:inline-block;
 	padding:0;
-	margin-bottom:0;
+	margin:0 auto 0 auto;
 }
 
 .new i {
 	margin-right:.6em;
+	color:black;
 }
 
 .ebook-page-count.ling-tag,
@@ -694,16 +696,18 @@ button {
 }
 
 .new.ling-tag {
-	background-color: rgb(168 68 38);
-	opacity:90%;
+	background-color: rgb(255 223 223);
+	color:black;
 }
 
 .new.mat-tag {
-	background-color: rgb(47 8 79);
+	background-color: rgb(214 201 255);
+	color:black;
 }
 
-.new i {
-	color:yellow;
+.new p {
+	font-family:Inter !important;
+	font-weight:600;
 }
 
 
@@ -750,60 +754,69 @@ button {
 
 #card-cti-mat {
 
-    /* ff 3.6+ */
+    /* ff 3.6+ 
     background:-moz-radial-gradient(circle at 10% 40%, rgb(124 45 137) 0%, rgb(53 19 114) 54%, rgb(27 0 57) 83%, rgb(7 25 53) 100%);
 
-    /* safari 5.1+,chrome 10+ */
+    /* safari 5.1+,chrome 10+ 
     background:-webkit-radial-gradient(circle at 10% 40%, rgb(124 45 137) 0%, rgb(53 19 114) 54%, rgb(27 0 57) 83%, rgb(7 25 53) 100%);
 
-    /* opera 11.10+ */
+    /* opera 11.10+ 
     background:-o-radial-gradient(circle at 10% 40%, rgb(124 45 137) 0%, rgb(53 19 114) 54%, rgb(27 0 57) 83%, rgb(7 25 53) 100%);
 
-    /* ie 10+ */
+    /* ie 10+ 
     background:-ms-radial-gradient(circle at 10% 40%, rgb(124 45 137) 0%, rgb(53 19 114) 54%, rgb(27 0 57) 83%, rgb(7 25 53) 100%);
 
-    /* global 92%+ browsers support */
+    /* global 92%+ browsers support 
     background:radial-gradient(circle at 10% 40%, rgb(124 45 137) 0%, rgb(53 19 114) 54%, rgb(27 0 57) 83%, rgb(7 25 53) 100%);
 
 	color:rgb(255, 255, 255);
 	
 	box-shadow: 0 0 50px 15px #30074e;
+	*/
+	
+	background-color: #480a6e;
 }
      
 
 #card-cti-hum {
-    /* ff 3.6+ */
+    /* ff 3.6+ 
     background:-moz-radial-gradient(circle at 40% 100%, rgb(169 134 72) 0%, rgb(93 62 16) 34%, rgb(75 49 9) 69%, rgb(93 61 22) 100%);;
 
-    /* safari 5.1+,chrome 10+ */
+    /* safari 5.1+,chrome 10+ 
     background:-webkit-radial-gradient(circle at 40% 100%, rgb(169 134 72) 0%, rgb(93 62 16) 34%, rgb(75 49 9) 69%, rgb(93 61 22) 100%);;
 
-    /* opera 11.10+ */
+    /* opera 11.10+ 
     background:-o-radial-gradient(circle at 40% 100%, rgb(169 134 72) 0%, rgb(93 62 16) 34%, rgb(75 49 9) 69%, rgb(93 61 22) 100%);;
 
-    /* ie 10+ */
+    /* ie 10+ 
     background:-ms-radial-gradient(circle at 40% 100%, rgb(169 134 72) 0%, rgb(93 62 16) 34%, rgb(75 49 9) 69%, rgb(93 61 22) 100%);;
 
-    /* global 92%+ browsers support */
+    /* global 92%+ browsers support 
     background:radial-gradient(circle at 40% 100%, rgb(169 134 72) 0%, rgb(93 62 16) 34%, rgb(75 49 9) 69%, rgb(93 61 22) 100%);
+	*/
+	
+	background-color: rgb(159 81 0);
 	
 }
 
 #card-cti-ling {
-    /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 100% 70%, rgb(206 106 2) 0%, rgb(159 50 17) 34%, rgb(128 0 0) 83%, rgb(91 3 3) 100%);
+    /* ff 3.6+ 
+    background:-moz-radial-gradient(circle at 32% 20%, rgb(220 26 26) 0%, rgb(95 8 8) 34%, rgb(95 9 9) 58%, rgb(42 1 1) 100%);
 
-    /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 100% 70%, rgb(206 106 2) 0%, rgb(159 50 17) 34%, rgb(128 0 0) 83%, rgb(91 3 3) 100%);
+    /* safari 5.1+,chrome 10+ 
+    background:-webkit-radial-gradient(circle at 32% 20%, rgb(220 26 26) 0%, rgb(95 8 8) 34%, rgb(95 9 9) 58%, rgb(42 1 1) 100%);
 
-    /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 100% 70%, rgb(206 106 2) 0%, rgb(159 50 17) 34%, rgb(128 0 0) 83%, rgb(91 3 3) 100%);
+    /* opera 11.10+ 
+    background:-o-radial-gradient(circle at 32% 20%, rgb(220 26 26) 0%, rgb(95 8 8) 34%, rgb(95 9 9) 58%, rgb(42 1 1) 100%);
 
-    /* ie 10+ */
-    background:-ms-radial-gradient(circle at 100% 70%, rgb(206 106 2) 0%, rgb(159 50 17) 34%, rgb(128 0 0) 83%, rgb(91 3 3) 100%);
+    /* ie 10+ 
+    background:-ms-radial-gradient(circle at 32% 20%, rgb(220 26 26) 0%, rgb(95 8 8) 34%, rgb(95 9 9) 58%, rgb(42 1 1) 100%);
 
-    /* global 92%+ browsers support */
-    background:radial-gradient(circle at 100% 70%, rgb(206 106 2) 0%, rgb(159 50 17) 34%, rgb(128 0 0) 83%, rgb(91 3 3) 100%);
+    /* global 92%+ browsers support 
+    background:radial-gradient(circle at 32% 20%, rgb(220 26 26) 0%, rgb(95 8 8) 34%, rgb(95 9 9) 58%, rgb(42 1 1) 100%);
+	*/
+	
+	background-color: rgb(168 0 0);
 	
 }
 
@@ -829,10 +842,9 @@ button {
 
 .card img {
     margin:.6em auto;
-    border-radius: .6em;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 20px -20px;
-    border: 1px solid rgba(255,255,255,.1);
-    width: 10em;
+    border-radius: .55em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 20px -20px;
+    width: 75%;
     display: inline-block;
 	position:relative;
 	z-index:10;
@@ -841,25 +853,30 @@ button {
 
 .card h2 {
     margin:0;
+	font-weight:800;
+	text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.11);
 	line-height:96%;
 	margin-bottom:.2em;
 }
 
-.card p {
-    margin-top:.1em;
+.card > div > p {
+	text-align: justify;
+	margin:.1em .85em .05em .85em;
+	font-size: 90%;
+	opacity: 90%;
 }
 
 .card button {
     display: block;
-    font-family: Rubik;
+    font-family: Inter;
     font-size:1.1em;
     font-weight: 600;
-    border-radius:.8em;
+    border-radius:.55em;
     border: none;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px 0px;
+	box-shadow: rgba(0, 0, 0, 0.11) 0px 5px 13px 5px;
     padding: .8em 1.8em;
-    color:#03135e;
-    background-color: rgb(255, 247, 0);
+    color:#020d3c;
+    background-color: rgb(255 249 79);
     margin: 0 auto 1em auto;
     transition: all ease-in .3s;
 	position:relative;
@@ -872,6 +889,7 @@ button {
 
 .card img:hover {
 	transform: scale(1.09);
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 15px -10px;
 }
 
 .card button i {
@@ -881,8 +899,8 @@ button {
 }
 
 .card button:hover {
-	background-color:rgb(143, 255, 188);
-	color:#03135e;
+	background-color:rgb(47 255 215);
+	color:#020d3c;
 }
 
 #card-mentoria a:nth-of-type(2) {
@@ -936,7 +954,7 @@ button {
 #quem-sou-eu img {
     width:30%;
     max-width: 25em;
-    margin:auto;
+    margin:-4em auto auto 0;
     text-align: center;
     float:left;
 }
