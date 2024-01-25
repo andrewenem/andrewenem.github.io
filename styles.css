@@ -112,6 +112,7 @@ button {
 
 #nav-modal {
     opacity: 0;
+	transform:scale(0);
     position:fixed;
     top:max(6vh,13vw);
     right:4%;
@@ -1213,9 +1214,14 @@ button {
     0% {
         opacity: 0;
     }
+	
+	1% {
+		transform: scale(1);
+	}
 
     100% {
         opacity: 1;
+		transform: scale(1);
     }
 }
 
