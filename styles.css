@@ -884,6 +884,7 @@ button {
 .big-icon.fa-calculator {
 	left:16%;
 	top:55%;
+	opacity:9%;
 }
 
 .big-icon.fa-comments {
@@ -943,8 +944,12 @@ button {
 }
 
 .new.ling-tag {
-	background-color: rgb(255 223 223);
-	color:black;
+	background-color: rgb(126 0 0);
+	color:#ffe694;
+}
+
+.new.ling-tag i {
+	color:#ff854d;
 }
 
 .new.mat-tag {
