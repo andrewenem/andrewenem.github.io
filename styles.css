@@ -1129,7 +1129,7 @@ button {
 	opacity: 90%;
 }
 
-.card button {
+.card button, .card-wide button {
     display: block;
     font-family: Inter;
     font-size:1.1em;
@@ -1146,6 +1146,18 @@ button {
 	z-index:10;
 }
 
+.card-wide button i {
+	transition: all ease .5s;
+}
+
+.card-wide h3, .card-wide button {
+	margin-left:1.2em;
+}
+
+.card-wide b {
+	font-weight:700;
+}
+
 #card-mentoria p > b {
     font-size: 120%;
 }
@@ -1156,7 +1168,7 @@ button {
 	box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 15px -10px;
 }
 
-.card button i {
+.card button i, .card-wide button i {
     font-size:90%;
     padding-left:.3em;
 	color:#03135e;
@@ -1167,6 +1179,16 @@ button {
 	color:#020d3c;
 	transform:scale(1.2);
 	box-shadow:none;
+}
+
+.card-wide button:hover {
+	background-color:rgb(47 255 215);
+	color:#020d3c;
+	box-shadow:none;
+}
+
+.card-wide button:hover i {
+	margin-left:.5em;
 }
 
 #card-mentoria a:nth-of-type(2) {
