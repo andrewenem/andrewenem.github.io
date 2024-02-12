@@ -1511,19 +1511,12 @@ button {
 	}
 	
 	#product-selector {
+		max-width:300px;
 		padding:.5rem;
 	}
 	
 	#product-selector * {
 		font-size:1.18em;
-	}
-	
-	.product-title p {
-		display:none;
-	}
-	
-	.product-title i {
-		margin:auto;
 	}
 	
 	.product-title.selected p {
