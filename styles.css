@@ -1010,22 +1010,9 @@ button {
 	padding:1em;
 }
 
-#card-cti-nat {
+#card-cti-bio {
 
-    /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 90% 10%, rgba(167, 201, 155, 30%) 0%, rgba(33, 150, 113, 30%) 34%, rgba(15, 77, 87, 30%) 90%);
-
-    /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 90% 10%, rgba(167, 201, 155, 30%) 0%, rgba(33, 150, 113, 30%) 34%, rgba(15, 77, 87, 30%) 90%);
-
-    /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 90% 10%, rgba(167, 201, 155, 30%) 0%, rgba(33, 150, 113, 30%) 34%, rgba(15, 77, 87, 30%) 90%);
-
-    /* ie 10+ */
-    background:-ms-radial-gradient(circle at 90% 10%, rgba(167, 201, 155, 30%) 0%, rgba(33, 150, 113, 30%) 34%, rgba(15, 77, 87, 30%) 90%);
-
-    /* global 92%+ browsers support */
-    background:radial-gradient(circle at 90% 10%, rgba(167, 201, 155, 30%) 0%, rgba(33, 150, 113, 30%) 34%, rgba(15, 77, 87, 30%) 90%);
+    background:rgb(0 104 72);
 
 	color:rgb(255, 255, 255);
 }
@@ -1141,7 +1128,11 @@ button {
 	text-align: justify;
 	margin:.1em .85em .05em .85em;
 	font-size: 90%;
-	opacity: 90%;
+	color:rgba(255,255,255,90%);
+}
+
+.card > div > p b {
+	color: white;
 }
 
 .card button, .card-wide button {
@@ -1253,8 +1244,8 @@ button {
 }
 
 .disabled {
-    opacity: 50%;
-    filter:saturate(50%);
+    opacity: 80%;
+    filter: saturate(50%);
     pointer-events: none;
 }
 
@@ -1508,6 +1499,10 @@ button {
 	#metodo {
 		padding:1em;
 		width:95%;
+	}
+	
+	#show-mentoria-benefits {
+		margin-top:.5em;
 	}
 	
 	#product-selector {
