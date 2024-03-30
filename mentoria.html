@@ -1,0 +1,351 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>André Araújo | Enem</title>
+  <meta name="description" content="Aluno com maior nota do país no Enem 2021">
+  <meta name="author" content="André Araújo">
+
+  <meta property="og:title" content="André Araújo | Enem">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://andrewenem.github.io">
+  <meta property="og:description" content="Aluno com maior nota do país no Enem 2021">
+  <meta property="og:image" content="thumb.png">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/2958d28c17.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="js.js"></script>
+  
+  <style>
+ 
+	#payment-info {
+		margin-top:1.8em;
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		grid-template-areas:"qr-code pix-details";
+	}
+	
+	#qr-code {
+		color:white;
+		grid-area:qr-code;
+		padding:1em 1em 1em 4em;
+		margin:0 0 auto auto;
+		text-align:center;
+	}
+	
+	#qr-img {
+		margin:auto;
+		width:300px;
+		height:300px;
+		background-color:white;
+		border-radius:.9em;
+	}
+	
+	#pix-details {
+		margin:5em auto 0 0;
+		grid-area:pix-details;
+	}
+	
+	#pix-details .container {
+		background:linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.12) 100%);
+		color:white;
+		font-size:90%;
+		border-radius:.9em;
+		width:fit-content;
+		text-align:left;
+	}
+	
+	#pix-details .container:nth-of-type(1) {
+		padding:1em 1.6em;
+		margin:1em 2em;
+	}
+
+	#pix-details .container:nth-of-type(1) h2 {
+		color:white;
+	}
+	
+	#pix-details .container:nth-of-type(2) {
+		padding:1em 1.8em;
+		margin:1em 2em;
+		max-width:320px;
+		line-break:anywhere;
+	}
+	
+	#pix-details h2 {
+		margin-top:.5em;
+	}
+	
+	#pix-details p {
+		margin-top:.5em;
+		margin-bottom:.5em;
+	}
+	
+	.uns {
+		-webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+	}
+
+	@media (min-width: 1280px) {
+		#metodo {
+			width:fit-content;
+		}
+	}
+	
+	#schedule {
+		color:white;
+		text-align:center;
+	}
+	
+	#schedule button {
+		display: block;
+		font-family: Inter;
+		font-size:1.1em;
+		font-weight: 600;
+		border-radius:.7em;
+		border: none;
+		padding: .8em 1.8em;
+		color:#020d3c;
+		background-color: rgb(255 249 79);
+		margin: 0 auto 1em auto;
+		transition: all ease .2s;
+		position:relative;
+		z-index:10;
+	}
+	
+	#schedule button:hover {
+		background-color:rgb(47 255 215);
+		color:#020d3c;
+		transform:scale(1.2);
+		box-shadow:none;
+	}
+	
+	#creditos {
+		max-width:50%;
+		line-break:auto;
+		color:white;
+		margin:3em auto;
+		text-align:left;
+		background:linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.12) 100%);
+		border-radius:1em;
+		padding:2em;
+	}
+	
+	#creditos h2 {
+		text-align:center;
+	}
+	
+	#product-desc {
+		display:grid;
+		grid-template-columns:2fr 5fr 2.2fr;
+		grid-template-areas:"icon name price";
+		margin:auto;
+		background:linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.12) 100%);
+		color:white;
+		padding:1em 1.5em;
+		border-radius:1em;
+		width:fit-content;
+		max-width:90%;
+	}
+	
+	#product-desc div:nth-of-type(1) {
+		grid-template-area:icon;
+	}
+	
+	#product-desc div:nth-of-type(1) img {
+		max-width:3rem;
+	}
+	
+	#product-desc div:nth-of-type(2) {
+		grid-template-area:name;
+	}
+	
+	#product-desc div:nth-of-type(3) {
+		grid-template-area:price;
+		text-align:right;
+	}
+	
+	#header {
+		backdrop-filter: blur(9px) saturate(110%);
+		background-color: rgba(0,15,48,0.2);
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+	}
+	
+	@media (max-width: 440px) and (max-height: 900px) {
+	
+		#intro {
+			grid-template-columns:1fr;
+			padding: 42% 2em 2em 2em;
+		}
+		
+		#intro a {
+			margin-left:0;
+			padding-left:0;
+		}
+		
+		#metodo {
+			width:95%;
+		}
+		
+		#metodo h1 {
+			font-size:1.6rem;
+		}
+		
+		#product-desc {
+			font-size:90%;
+			max-width:100%;
+		}
+	
+		#payment-info {
+			grid-template-columns:1fr;
+			grid-template-areas:"qr-code""pix-details";
+		}
+		
+		#qr-code {
+			margin:auto;
+			padding:2em 1em 1em 1em;
+		}
+		
+		#qr-img {
+			width:200px;
+			height:200px;
+		}
+		
+		#pix-details {
+			margin:auto;
+			padding:0 1em 3em 1em;
+		}
+		
+		#pix-details .container:nth-of-type(1),
+		#pix-details .container:nth-of-type(2) {
+			margin:0;
+			margin-top:1em;
+		}
+		
+		#creditos {
+			max-width:95%;
+		}
+	}
+	
+	
+	
+  </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-non-button-elements">
+            <a href="#intro">André Araújo</a>
+            <a href="https://instagram.com/andrewenem"><i class="fa fa-instagram"></i></a>
+            <a href="https://youtube.com/c/AndreAraujoEnem"><i class="fa fa-youtube"></i></a>
+		</div>
+        <button id="menu-button"><i class="fa-solid fa-bars fa-fw"></i></button>
+    </div>
+	
+	<div class="modal-container" id="modal-container">
+		<div id="nav-modal" class="nav-modal">
+			<a href="https://andrewenem.github.io#quem-sou-eu"><div class="link"><i class="fa fa-stethoscope"></i>Quem sou eu<i class="fa fa-arrow-right"></i></div></a>
+			<hr>
+			<a href="https://andrewenem.github.io#resultados"><div class="link"><i class="fa-solid fa-chart-simple"></i>Resultados<i class="fa fa-arrow-right"></i></div></a>
+			<hr>
+			<a href="https://andrewenem.github.io#metodo"><div class="link cta-link"><i class="fa-solid fa-check"></i>Use meu Método<i class="fa fa-arrow-right"></i></div></a>
+		</div>
+	</div>
+
+    <div class="content">
+        <div id="intro" style="padding-bottom:1em;">
+			<div id="reservation-header">
+				<h1 style="margin:auto;">Agendamento da Mentoria Individual</h1>
+				<p style="opacity:50%">Exclusivo para alunos da Mentoria Raio-X 2024</p>
+				
+				<a id="show-mentoria-benefits" style="margin:0; font-size:60%;" href="#creditos"><button>Mais informações abaixo <i class="fa fa-circle-info"></i></button></a>
+			</div>
+        </div>
+		
+		<div id="metodo">
+		<h1 style="text-align:center;"><i class="fa fa-bolt" style="margin-right:.5em; color:gold;"></i>Compra de créditos</h2>
+		<div id="product-desc" class="uns">
+			<div>
+				<img src="favicon.ico"></img>
+			</div>
+			<div>
+				<p style="margin:.2em auto"><b>Descrição do produto</b></p>
+				<i class="fa fa-bolt" style="margin-right:.5em; color:gold;"></i><p style="display:inline;">60 créditos Raio-X (abril)</p>
+			</div>
+			<div>
+				<p style="margin:.2em auto"><b>Valor</b></p>
+				<p style="display:inline;">R$45</p>
+			</div>
+		</div>
+		<hr style="border:1px solid rgba(255,255,255,.2); max-width:75%; margin-top:1.5em;">
+
+		<div id="payment-info">
+			<div id="qr-code" class="uns">
+				<p style="background-color:rgba(255,255,255,.2); border-radius:.4em; font-weight:600; color:white; padding:.4em 1em; width:fit-content; margin:0 auto;"><i class="fa fa-credit-card" style="margin-right:.5em;"></i>Pagamento via Pix</p>
+				<p style="color:white; font-size:80%; opacity:75%;">Confira os dados do destinatário com atenção.</p>
+				<img id="qr-img" src="qr.jpg"></img>
+			</div>
+			
+			<div id="pix-details">
+				<div class="container uns">
+					<h2><i class="fa fa-share" style="margin-right:.5em"></i>Destinatário</h2>
+					<p><i class="fa fa-user" style="margin-right:.5em"></i><b>André Welisson Marques de Araújo</b></p>
+					<p><i class="fa fa-building-columns" style="margin-right:.5em"></i>Banco do Brasil</p>
+				</div>
+				<div class="container">
+					<p class="uns">Escaneie o QR Code ou copie e cole:</p>
+					<p style="opacity:75%; font-size:.75em;"><i class="fa fa-copy" style="margin-right:.5em;"></i>00020126920014br.gov.bcb.pix0125andrewelisson@outlook.com0241Pacote de Creditos - Mentoria Raio-X 2024520400005303986540545.005802BR5925ANDRE WELISSON MARQUES DE6014RIO DE JANEIRO62270523RaioXMentoriaIndividual63047DF8</p>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<div id="schedule">
+			<p style="opacity:50%; font-size:90%; margin-top:2em;">Já fez o pagamento ou tem créditos em saldo?</p>
+			<a href="https://calendly.com/raiox-da-aprovacao/raiox2024"><button><i class="fa fa-calendar" style="margin-right:.5em"></i> Agendar mentoria</button></a>
+		</div>
+		
+		<div id="creditos">
+			<h2><i class="fa fa-circle-check" style="margin-right:.5em"></i>Informações adicionais sobre créditos</h2>
+			<p style="text-align:left;">
+				<h3>1. Agendando mentorias</h3>
+				<b>Cada videochamada (mentoria) individual de 1 hora custa 60 créditos Raio-X.</b> Isso significa que cada minuto da mentoria custa 1 crédito.
+				No painel acima, você tem a opção de comprar créditos em pacotes com 60 unidades.
+				<br><br>
+				Ao efetuar o pagamento, você adquire <b>60 créditos</b> para agendamento. Feito o pagamento, você já pode agendar sua mentoria no link
+				do Calendly, inserindo as informações de data e horário da transação no ato da reserva, segundo os dados do comprovante. O seu saldo de
+				créditos (o qual pode ser visto na sua <b>planilha de simulados</b>) é atualizado em até 2 dias após a compra. Na data e horário marcado
+				para a mentoria, o crédito é invariavelmente consumido.
+				<h3>2. Bônus e condições</h3>
+				<ul>
+				<li>Na aquisição de <b>240 créditos</b>, ao longo de qualquer janela de tempo durante a Mentoria de 2024, você recebe <b>60 créditos adicionais.</b></li>
+				<li>A cada mentoria coletiva, a partir de abril, que você participar, receberá <b>6 créditos.</b></li>
+				<li>O saldo de créditos não tem rendimento. Só é possível solicitar o reembolso de pacotes de 60 créditos não recebidos como bônus, mas sim adquiridos
+				por meio do painel acima.</li>
+				<li>O saldo de créditos será <b>zerado ao final da Mentoria.</b></li>
+				</ul>
+				<h3>3. Não comparecimento</h3>
+				Na data marcada para a mentoria, 60 créditos são invariavelmente consumidos. Caso você não compareça, você receberá de volta 45 créditos, seguindo o disposto
+				nos Termos de Serviço da Mentoria. Não é possível agendar mentorias fracionadas, isto é, só se pode agendar mentorias de uma hora, por 60 créditos cada.
+			</p>
+		</div>
+		
+    </div>
+    <div id="footer" style="text-align:center; opacity:25%;">
+        <p>André Araújo, 2024. © Todos os direitos reservados.</p>
+    </div>
+</body>
+
+</html>
