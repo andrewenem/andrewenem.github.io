@@ -44,7 +44,7 @@ button {
 
 .s {
 	opacity:70%;
-	font-size:96%;
+	font-size:80%;
 	font-weight:500;
 	text-decoration-thickness: 2px;
 	text-decoration-color:rgba(255,255,255,.8);
@@ -932,6 +932,7 @@ button {
 	max-width:10em;
 	position:relative;
 	z-index:2;
+	background-color:rgb(247 255 95);
 }
 
 .ebook-page-count {
@@ -964,19 +965,23 @@ button {
 	color: antiquewhite;
 }
 
-.new.ling-tag {
+.new.ling-tag, .new.bio-tag {
 	background-color: #ff6e37;
 	color:white;
 	box-shadow: 0px 0px 20px 5px rgba(255,240,76,0.4);
 }
 
-.new.ling-tag i {
+.new.ling-tag i, .new.bio-tag i {
 	color:#ffeb4d;
 }
 
 .new.mat-tag {
 	background-color: rgb(214 201 255);
 	color:black;
+}
+
+.new.bio-tag {
+	box-shadow: 0px 0px 20px 5px rgb(136 255 76 / 40%);
 }
 
 .new p {
@@ -1018,7 +1023,7 @@ button {
 
 #card-cti-bio {
 
-    background:#00902f;
+    background:#07772b;
 
 	color:white;
 }
