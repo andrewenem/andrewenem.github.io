@@ -767,6 +767,7 @@ button {
 
 #product-selector-parent {
 	text-align:center;
+	padding-bottom:1em;
 }
 
 #product-selector {
@@ -850,18 +851,28 @@ button {
 }
 
 .card-container {
+	display:grid;
+	margin:auto;
+	grid-template-columns:1fr 1fr;
     text-align: center;
+	justify-items:center;
+	width:fit-content;
 }
 
 .card {
-    display: inline-block;
-    padding:1.5rem 1.3rem;
+    display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas:
+				"cover text"
+				"cover text";
+	align-items: center;
+	min-width:500px;
+	max-width:35vw;
+    padding:1rem .5rem;
     border-radius:1.6rem;
     color: white;
     text-align: center;
-    margin: 2.3em 1em auto auto;
-    width:75%;
-    max-width:22em;
+    margin: 1em 1em;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 	overflow: hidden;
 	position:relative;
@@ -887,31 +898,101 @@ button {
 	border-width: 1px 2px 3px 2px;*/
 }
 
-.card > div > h3 {
-	font-size:1.25em;
+
+.card img {
+	grid-template-area:"cover";
+    margin:.6em;
+    border-radius: .8em;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px 25px 20px -20px;
+    width: 90%;
+    display: inline-block;
+	position:relative;
+	z-index:10;
+	transition: all ease .3s;
+}
+
+.ebook-page-count {
+	grid-area:cover;
+	padding:.3em 0;
+	border-radius:.4em;
+	max-width:10em;
+	margin:-1em auto .4em auto;
+}
+
+.ebook-page-count p {
+	font-size:85%;
+	font-weight:400;
+	opacity:50%;
+}
+
+.card h2 {
 	font-weight:800;
+	text-align:left;
+	font-size:1.75em;
+	margin:.5em .5em .25em .5em;
+	text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.11);
+	line-height:96%;
+}
+
+.card > div > p {
+	text-align: justify;
+	word-break: auto-phrase;
+	margin:.1em .85em .05em .85em;
+	font-size: 90%;
+	color:rgba(255,255,255,90%);
+}
+
+.card > div > p b {
+	color: white;
+}
+
+.card button, .card-wide button {
+    display: block;
+    font-family: Inter;
+    font-size:1.1em;
+    font-weight: 600;
+    border-radius:.7em;
+    border: none;
+    padding: .8em 1.8em;
+    color:#020d3c;
+    background-color: rgb(255 249 79);
+    margin: 0 0 1em .5em;
+    transition: all ease .2s;
+	position:relative;
+	z-index:10;
+}
+
+.card-wide a {
+	display:inline-block;
+}
+
+.card > div > h3 {
+	font-size:1.5em;
+	font-weight:800;
+	text-align:left;
+	margin-left:.5em;
 }
 
 .big-icon {
 	font-size:17em;
 	opacity:15%;
-	top:60%;
-	left:9%;
+	top:50%;
+	right:0%;
 	position:absolute;
 	rotate:10deg;
 	z-index:0;
 }
 
 .big-icon.fa-calculator {
-	left:16%;
-	top:55%;
+	/*left:16%;
+	top:55%;*/
 	/*opacity:9%;*/
 }
 
 .big-icon.fa-comments {
-	font-size:15em;
+	font-size:14em;
 	opacity:23%;
-	left:5%;
+	right:3%;
 	rotate:-6deg;
 }
 
@@ -926,26 +1007,12 @@ button {
 .new {
 	padding:.3em 0;
 	border-radius:.4em;
-	margin:auto auto .8em auto;
+	margin: 0 0 1em .9em;
 	font-size:90%;
 	font-weight:500;
 	max-width:10em;
 	position:relative;
 	z-index:2;
-	background-color:rgb(247 255 95);
-}
-
-.ebook-page-count {
-	padding:.3em 0;
-	border-radius:.4em;
-	max-width:10em;
-	margin:-1.2em auto .4em auto;
-}
-
-.ebook-page-count p {
-	font-size:80%;
-	font-weight:300;
-	opacity:40%;
 }
 
 .new i, .new p,
@@ -957,7 +1024,6 @@ button {
 
 .new i {
 	margin-right:.6em;
-	color:black;
 }
 
 .ebook-page-count.ling-tag,
@@ -965,14 +1031,23 @@ button {
 	color: antiquewhite;
 }
 
-.new.ling-tag, .new.bio-tag {
-	background-color: #ff6e37;
+.new.ling-tag {
+	background-color: #760000;
 	color:white;
-	box-shadow: 0px 0px 20px 5px rgba(255,240,76,0.4);
+	box-shadow: 0px 0px 20px 5px rgb(255 106 62 / 40%);
 }
 
-.new.ling-tag i, .new.bio-tag i {
+.new.ling-tag i {
+	color:#ff9900;
+}
+
+.new.bio-tag i {
 	color:#ffeb4d;
+}
+
+.new.hum-tag {
+	color:white;
+	background-color:rgb(255 132 0);
 }
 
 .new.mat-tag {
@@ -981,7 +1056,49 @@ button {
 }
 
 .new.bio-tag {
-	box-shadow: 0px 0px 20px 5px rgb(136 255 76 / 40%);
+	background-color:#34a755;
+}
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  45% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.new.ling-tag {
+	-webkit-animation: breathing 5s ease-in-out infinite normal;
+    animation: breathing 5s ease-in-out infinite normal;
 }
 
 .new p {
@@ -1112,58 +1229,6 @@ button {
     /* global 92%+ browsers support */
     background:radial-gradient(circle at 47% 21%, rgb(40 62 166) 0%, rgb(0 11 60) 100%);
 
-}
-
-
-
-.card img {
-    margin:.6em auto;
-    border-radius: .8em;
-    box-shadow: rgba(0, 0, 0, 0.23) 0px 25px 20px -20px;
-    width: 90%;
-    display: inline-block;
-	position:relative;
-	z-index:10;
-	transition: all ease .3s;
-}
-
-.card h2 {
-    margin:0;
-	font-weight:800;
-	text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.11);
-	line-height:96%;
-	margin-bottom:.2em;
-}
-
-.card > div > p {
-	text-align: justify;
-	margin:.1em .85em .05em .85em;
-	font-size: 90%;
-	color:rgba(255,255,255,90%);
-}
-
-.card > div > p b {
-	color: white;
-}
-
-.card button, .card-wide button {
-    display: block;
-    font-family: Inter;
-    font-size:1.1em;
-    font-weight: 600;
-    border-radius:.7em;
-    border: none;
-    padding: .8em 1.8em;
-    color:#020d3c;
-    background-color: rgb(255 249 79);
-    margin: 0 auto 1em auto;
-    transition: all ease .2s;
-	position:relative;
-	z-index:10;
-}
-
-.card-wide a {
-	display:inline-block;
 }
 
 #show-mentoria-benefits button {
@@ -1413,8 +1478,8 @@ button {
         margin-left:35%;
 		rotate:2.5deg;
     }
-
-    .card {
+	
+	.card {
         padding:2rem .9rem 1.3rem .9rem;
         border-radius: 1.66rem;
         color: white;
@@ -1441,6 +1506,13 @@ button {
 	
 	#card-mentoria-content h2 {
 		margin:auto;
+	}
+}
+
+@media (max-width: 1200px) {
+	.card-container {
+		grid-template-columns:1fr;
+		grid-template-rows:1fr 1fr;
 	}
 }
 
@@ -1533,9 +1605,43 @@ button {
 		transform:none;
 	}
 	
+	.card-container {
+		grid-template-columns:1fr;
+		grid-template-rows:1fr 1fr;
+	}
+	
 	.card {
 		width:100%;
+		grid-template-columns:1fr;
+		grid-template-areas:"cover" "text";
+		min-width:50vw;
+		max-width:90vw;
 		margin: 1em auto auto auto;
+		font-size:120%;
+	}
+	
+	.card > div > h2,
+	.card > div > h3,
+	.card > div > a {
+		text-align:center;
+	}
+	
+	.new {
+		margin:.9em auto 1em auto;
+	}
+	
+	.card button {
+		margin: .5em auto 1em auto;
+	}
+	
+	.big-icon {
+		top:66%;
+		left:0%;
+	}
+	
+	.big-icon.fa-comments {
+		left:7%;
+		top:73%;
 	}
 	
 	#card-mentoria {
