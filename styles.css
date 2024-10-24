@@ -1,5 +1,5 @@
 :root {
-    --default-border-radius: .8em;
+    --default-border-radius: 1em;
 }
 
 html {
@@ -586,8 +586,8 @@ button {
     color: black;
     margin:.5em .2em .2em .2em;
     padding:.4em;
-    border-radius: var(--default-border-radius);
-    box-shadow: 6px 6px rgba(0,0,0,.1);
+    border-radius: calc(var(--default-border-radius) + .1em);
+    /*box-shadow: 6px 6px rgba(0,0,0,.1);*/
     max-width: 95vw;
 }
 
@@ -923,7 +923,7 @@ button {
 	font-size:85%;
 	font-weight:400;
 	opacity:50%;
-	font-color:white;
+	color:white;
 }
 
 .card h2 {
