@@ -1024,7 +1024,7 @@ button {
 	margin: 0 0 1em .9em;
 	font-size:90%;
 	font-weight:500;
-	max-width:10em;
+	/*max-width:10em;*/
 	position:relative;
 	z-index:2;
 	text-align:center;
