@@ -68,6 +68,7 @@ button {
     width:100%;
     z-index: 100;
     transition: all ease .5s;
+	backdrop-filter: blur(15px) saturate(110%);
 }
 
 .sticky {
@@ -358,6 +359,7 @@ button {
 }
 
 #na-midia {
+	transform:scale(1.1);
 	grid-area:midia;
 }
 
@@ -422,17 +424,19 @@ button {
 
 #na-midia .link-container {
 	text-align:center;
+	transition: all ease .6s;
 }
 
 #na-midia .link-container a {
     display:inline;
 	text-align:center;
     margin:inherit;
-	background-color:rgba(255,255,255,.12);
+	background-color:rgba(255,255,255,.1);
+	outline:1px solid rgba(255,255,255,.04);
 	padding:2em .4em .2em .4em;
 	border-radius:.3em;
-	opacity:55%;
 	transition: all ease .5s;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 1px, rgba(0, 0, 0, 0.05) 0px 4px 2px, rgba(0, 0, 0, 0.05) 0px 8px 4px, rgba(0, 0, 0, 0.05) 0px 16px 8px, rgba(0, 0, 0, 0.05) 0px 32px 16px;
 }
 
 #na-midia .link-container a:hover, #na-midia .link-container a.selected {
@@ -441,9 +445,13 @@ button {
 	opacity:100%;
 }
 
+#na-midia .link-container:hover {
+	transform:scale(1.12);
+}
+
 #na-midia p {
     font-size:.7em;
-    letter-spacing: .32em;
+    letter-spacing: .15em;
 	opacity:75%;
 }
 
